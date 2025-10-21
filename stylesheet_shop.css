@@ -115,8 +115,8 @@ img {
   grid-area: bloeien;
 }
 
-.bloeien > .lente {
-  margin-left: 25px;
+#lente {
+  margin-left: 56px;
 }
 
 .zoekButton {
@@ -129,6 +129,10 @@ nav {
   background-color: rgb(124, 110, 90);
   color: white;
   min-width: 20%;
+}
+
+.navShop {
+  color: rgb(153, 153, 255);
 }
 
 nav > ul {
