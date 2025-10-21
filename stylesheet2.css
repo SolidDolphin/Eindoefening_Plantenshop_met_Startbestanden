@@ -1,8 +1,7 @@
 body {
   font-family: "verdana", monospace;
   font-weight: 400;
-  /* font-weight: 700; */
-  max-width: 1000px;
+  max-width: 1024px;
   margin: auto;
   padding: 0px;
 }
@@ -59,6 +58,9 @@ main > .content {
   grid-area: categorie;
 }
 
+/* #categorie {
+} */
+
 .zoekNaam {
   grid-area: zoekNaam;
 }
@@ -78,8 +80,9 @@ main > .content {
 .zoekButton {
   grid-area: zoekButton;
 }
-
-/* categorie zoekNaam bodem */
+.zoekButton > button {
+  margin-left: 30px;
+}
 
 img {
   max-width: 500px;

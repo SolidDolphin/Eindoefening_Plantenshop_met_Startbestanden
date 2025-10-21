@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="stylesheet2.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -50,10 +50,14 @@
           />
         </section>
 
-        <section class="zoeken">
-          <h2 class="zoekTitel">Zoeken</h2>
-          <p class="zoekParagraaf">Zoek een plant die past voor uw tuin</p>
-          <div class="categorie">
+        <ul class="zoeken">
+          <li>
+            <h2 class="zoekTitel">Zoeken</h2>
+          </li>
+          <li>
+            <p class="zoekParagraaf">Zoek een plant die past voor uw tuin</p>
+          </li>
+          <li class="categorie">
             <label for="categorie">Wat zoekt u?</label>
             <select id="categorie">
               <option value="">-- kies een categorie --</option>
@@ -63,12 +67,15 @@
               <option value="kruiden">Kruiden</option>
               <option value="gras">Gras</option>
             </select>
-          </div>
-          <div class="zoekNaam">
-            <label for="zoekNaam">zoek op naam:</label>
+          </li>
+          <li class="zoekNaam">
+            <label for="zoekNaam"
+              >zoek op <br />
+              naam:</label
+            >
             <input type="search" class="zoekNaam" class="zoekNaam" />
-          </div>
-          <div class="bodem">
+          </li>
+          <li class="bodem">
             <label for="bodem">Welke bodem?</label>
             <select id="bodem" class="bodem">
               <option value="">-- kies een categorie --</option>
@@ -78,8 +85,8 @@
               <option value="veen">Veengrond</option>
               <option value="steen">Stenige grond</option>
             </select>
-          </div>
-          <div class="standplaats">
+          </li>
+          <li class="standplaats">
             <label>Standplaats:</label>
             <input type="radio" id="zonnig" />
             <label for="zonnig">zonnig</label>
@@ -89,9 +96,9 @@
 
             <input type="radio" id="schaduw" />
             <label for="schaduw">schaduw</label>
-          </div>
+          </li>
 
-          <div class="bloeien">
+          <li class="bloeien">
             <label>Bloeit in:</label>
             <label for="lente">Lente</label>
             <input type="radio" id="lente" />
@@ -104,12 +111,12 @@
 
             <label for="winter">Winter</label>
             <input type="radio" id="winter" />
-          </div>
+          </li>
 
-          <div>
-            <button type="Button" class="zoekButton">Zoek</button>
-          </div>
-        </section>
+          <li class="zoekButton">
+            <button type="Button">Zoek</button>
+          </li>
+        </ul>
       </div>
     </main>
 
