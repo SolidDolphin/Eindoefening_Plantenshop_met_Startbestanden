@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="stylesheet2.css" />
+    <link rel="stylesheet" href="stylesheet_shop.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,26 +22,26 @@
       <nav>
         <ul>
           <li>
-            <h3>Home</h3>
+            <h3><a href="">Home</a></h3>
           </li>
           <li>
-            <h3>Shop</h3>
+            <h3><a href="">Shop</a></h3>
           </li>
           <li>
-            <h3>Verzorging</h3>
+            <h3><a href="">Verzorging</a></h3>
           </li>
           <li>
-            <h3>Galerij</h3>
+            <h3><a href="">Galerij</a></h3>
           </li>
           <li>
-            <h3>Over ons</h3>
+            <h3><a href="">Over ons</a></h3>
           </li>
         </ul>
       </nav>
 
       <div class="content">
         <section class="onlineShop">
-          <h2>Online shop</h2>
+          <h2>Online shop 2</h2>
           <p>maak hier uw aankopen</p>
           <img
             src="./ASSETS/img/flowers_1024_400.jpg"
@@ -51,8 +51,8 @@
         </section>
 
         <ul class="zoeken">
-          <li>
-            <h2 class="zoekTitel">Zoeken</h2>
+          <li class="zoekTitel">
+            <h2>Zoeken</h2>
           </li>
           <li>
             <p class="zoekParagraaf">Zoek een plant die past voor uw tuin</p>
@@ -73,11 +73,14 @@
               >zoek op <br />
               naam:</label
             >
-            <input type="search" class="zoekNaam" class="zoekNaam" />
+            <input type="search" id="zoekNaam" />
           </li>
           <li class="bodem">
-            <label for="bodem">Welke bodem?</label>
-            <select id="bodem" class="bodem">
+            <label for="bodem"
+              >Welke <br />
+              bodem?</label
+            >
+            <select id="bodem">
               <option value="">-- kies een categorie --</option>
               <option value="zand">Zandgrond</option>
               <option value="klei">Kleigrond</option>

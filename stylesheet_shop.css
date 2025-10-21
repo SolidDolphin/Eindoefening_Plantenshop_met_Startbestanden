@@ -1,0 +1,153 @@
+body {
+  font-family: "verdana", monospace;
+  font-weight: 400;
+  max-width: 1024px;
+  margin: auto;
+  padding: 0px;
+}
+
+header {
+  display: block;
+  text-align: right;
+  font-family: "Verdana", monospace;
+  background-color: rgb(255, 245, 232);
+  padding: 20px 10px 5px 0px;
+}
+
+header > h1 {
+  font-weight: 700;
+  color: red;
+  margin: 0px;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+main > .content {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.onlineShop > h2 {
+  color: seagreen;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 10px;
+}
+
+.onlineShop > p {
+  padding-left: 10px;
+}
+
+img {
+  max-width: 100%;
+  border-bottom: 16px solid rgb(149, 57, 185);
+  border-top: 16px solid rgb(149, 57, 185);
+}
+
+.zoeken {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-auto-rows: auto;
+  grid-template-areas:
+    "zoekTitel zoekTitel"
+    "zoekParagraaf zoekParagraaf"
+    "categorie zoekNaam"
+    "bodem bodem"
+    "standplaats standplaats"
+    "bloeien bloeien"
+    "zoekButton zoekButton";
+  gap: 10px;
+  padding: 0;
+  margin: 0px 10px 0px 10px;
+}
+
+.zoekTitel {
+  grid-area: zoekTitel;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.zoekTitel > h2 {
+  color: seagreen;
+}
+
+.zoekParagraaf {
+  grid-area: zoekParagraaf;
+}
+
+.categorie {
+  grid-area: categorie;
+}
+
+#categorie {
+  margin-left: 15px;
+}
+
+.zoekNaam {
+  grid-area: zoekNaam;
+}
+
+#zoekNaam {
+  margin-left: 40px;
+}
+
+.bodem {
+  grid-area: bodem;
+}
+
+#bodem {
+  margin-left: 56px;
+}
+
+.standplaats {
+  grid-area: standplaats;
+}
+
+#zonnig {
+  margin-left: 26px;
+}
+
+.bloeien {
+  grid-area: bloeien;
+}
+
+.bloeien > .lente {
+  margin-left: 25px;
+}
+
+.zoekButton {
+  grid-area: zoekButton;
+  margin-left: 135px;
+}
+
+nav {
+  font-family: Space Mono, monospace;
+  background-color: rgb(124, 110, 90);
+  color: white;
+  min-width: 20%;
+}
+
+nav > ul {
+  padding: 10px 50px 0px 50px;
+  margin: 0;
+  list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+footer {
+  background-color: rgb(173, 171, 131);
+}
+
+footer > p {
+  margin: 0px;
+  padding: 20px;
+  text-align: center;
+}
