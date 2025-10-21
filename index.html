@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>De plantenshop</h1>
+      <p>een oefening HTML-CSS voor de basis opleiding</p>
+    </header>
+
+    <main>
+      <aside>
+        <ul>
+          <li>
+            <h3>Home</h3>
+          </li>
+          <li>
+            <h3>Shop</h3>
+          </li>
+          <li>
+            <h3>Verzorging</h3>
+          </li>
+          <li>
+            <h3>Galerij</h3>
+          </li>
+          <li>
+            <h3>Over ons</h3>
+          </li>
+        </ul>
+      </aside>
+
+      <div class="content">
+        <section class="onlineShop">
+          <h2>Online shop</h2>
+          <p>maak hier uw aankopen</p>
+          <img src="./ASSETS/img/flowers_1024_400.jpg" alt="en" class="bloemenFoto" />
+        </section>
+        <section class="zoeken">
+          <h2 class="zoekTitel">Zoeken</h2>
+          <p class="zoekParagraaf">Zoek een plant die past voor uw tuin</p>
+          <div>
+            <label for="categorie">Wat zoekt u?</label>
+            <select
+              id="categorie"
+              name="categorie"
+            />
+            <option value="">-- kies een categorie --</option>
+            <option value="bloem">Bloem</option>
+            <option value="struik">Struik</option>
+            <option value="boom">Boom</option>
+            <option value="kruiden">Kruiden</option>
+            <option value="gras">Gras</option>
+            </select>
+          </div>
+          <div>
+            <label for="zoekNaam">zoek op naam:</label>
+            <input type="search" id="zoekNaam" name="zoekNaam" />
+          </div>
+          <div>
+            <label for="bodem">Welke bodem?</label>
+            <select
+              id="bodem"
+              name="bodem"
+            />
+            <option value="">-- kies een categorie --</option>
+            <option value="zand">Zandgrond</option>
+            <option value="klei">Kleigrond</option>
+            <option value="leem">Leemgrond</option>
+            <option value="veen">Veengrond</option>
+            <option value="steen">Stenige grond</option>
+            </select>
+          </div>
+          <div>
+            <Label class="standplaats">Standplaats:</Label>
+              <input type="radio" id="zonnig" name="standplaats">
+              <label for="zonnig">zonnig</label>
+
+              <input type="radio" id="halfschaduw" name="standplaats">
+              <label for="halfschaduw">halfschaduw</label>
+
+              <input type="radio" id="schaduw" name="standplaats">
+              <label for="schaduw">schaduw</label>
+          </div>
+
+          <div>
+            <Label class="bloeien">Bloeit in:</Label>
+              <label for="lente">Lente</label>
+              <input type="radio" id="lente" name="bloeien">
+
+              <label for="zomer">Zomer</label>
+              <input type="radio" id="zomer" name="bloeien">
+
+              <label for="herfst">Herfst</label>
+              <input type="radio" id="herfst" name="bloeien">
+
+              <label for="winter">Winter</label>
+              <input type="radio" id="winter" name="bloeien">
+          </div>
+
+          <div>
+            <button type="submit">Zoek</button>
+          </div>
+
+        </section>
+      </div>
+
+    </main>
+
+    <footer>
+      <p>© Copyright VDAB</p>
+    </footer>
+  </body>
+</html>
